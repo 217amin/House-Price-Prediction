@@ -1,0 +1,16 @@
+# Python environments
+.venv/
+venv/
+__pycache__/
+
+# Environment variables (Keys)
+.env
+
+# Large Datasets and Vector DBs
+*.csv
+*.json
+*.sqlite
+*.db
+/data/
+/chroma_db/
+/artifacts/
