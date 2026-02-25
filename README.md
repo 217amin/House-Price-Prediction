@@ -65,6 +65,7 @@ This modular structure allows each stage of the pipeline to be analyzed, improve
 ├── 03_CLASSIFICATION.ipynb
 ├── 04_UNSUPERVISED.ipynb
 ├── README.md
+├── DATA_DICTIONARY.md
 ├── requirements.txt
 
 ```
