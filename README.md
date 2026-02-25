@@ -1,6 +1,3 @@
-### 📄 `README.md`
-
-```markdown
 # 🏠 House Price Prediction — End-to-End Machine Learning Project
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
@@ -75,12 +72,19 @@ This modular structure allows each stage of the pipeline to be analyzed, improve
 ### Notebook Descriptions
 
 * **01_PREPROCESSING.ipynb**
+* 
 Data cleaning, handling high-nullity columns, low variance filtering, handling extreme outliers (using Z-scores), categorical encoding, feature scaling, and feature engineering.
+
 * **02_REGRESSION.ipynb**
+* 
 Supervised regression models (Linear, Ridge, RandomForest, XGBoost, LightGBM, CatBoost) to predict continuous house prices. Includes robust evaluation (RMSLE, RMSE, R²) and Hyperparameter Tuning using GridSearchCV.
+
 * **03_CLASSIFICATION.ipynb**
+* 
 Reformulation of the problem into price categories (Low / Medium / High) using discretized target variables. Evaluates Tree-based models (Random Forest, XGBoost) utilizing F1-Weighted scores and Confusion Matrices.
+
 * **04_UNSUPERVISED.ipynb**
+* 
 Clustering techniques to identify natural groupings. Explores K-Means (with the Elbow Method) and advanced non-linear dimensionality reduction combined with density-based clustering (UMAP + HDBSCAN).
 
 ---
@@ -102,8 +106,8 @@ Regression is the primary modeling approach, focusing on precisely estimating th
 
 * **Metrics:** RMSLE (primary), RMSE, and R².
 * **Best Models:** After exhaustive GridSearchCV hyperparameter tuning, **CatBoost** and **XGBoost** emerged as the top performers.
-* *CatBoost (Tuned):* Test RMSLE: **0.1283**, Test R²: **0.9219**
-* *XGBoost (Tuned):* Test RMSLE: **0.1279**, Test R²: **0.9197**
+* *CatBoost (Tuned):* Test RMSLE: **0.1271**, Test R²: **0.9252**
+* *XGBoost (Tuned):* Test RMSLE: **0.1276**, Test R²: **0.9194**
 
 
 * **Insight:** Tree-based ensemble models significantly outperformed baseline linear models in capturing non-linear relationships and interactions.
