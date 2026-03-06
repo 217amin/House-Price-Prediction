@@ -9,7 +9,6 @@ __pycache__/
 .env
 
 # Large Datasets and Vector DBs
-*.csv
 *.json
 *.sqlite
 *.db
