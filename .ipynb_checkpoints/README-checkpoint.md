@@ -1,32 +1,32 @@
-# 🏠 House Price Prediction — End-to-End Machine Learning Project
+# House Price Prediction — End-to-End Machine Learning Project
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
 ![Status](https://img.shields.io/badge/Status-Complete-brightgreen)
 ![License](https://img.shields.io/badge/License-MIT-lightgrey)
 
-## 🚀 Project Summary
+## Project Summary
 
 **Goal:** Predict house prices from structured real-estate features.  
 **Approach:** Preprocessing + Regression (core) + Classification (interpretability) + Unsupervised (segmentation).  
 **Deliverables:** Clean pipeline notebooks, evaluation, and a production-oriented monitoring plan.
 
-## 📌 Project Overview
+## Project Overview
 This project implements an end-to-end machine learning pipeline to analyze and predict house prices using structured real-estate data. The objective is not only to achieve accurate price predictions, but also to explore alternative problem framings (classification) and uncover hidden market structures (unsupervised learning).
 
 The project is designed to reflect **real-world machine learning workflows**, from data preprocessing to model evaluation and interpretation.
 
 ---
 
-## 📊 The Dataset
+## The Dataset
 
 This pipeline processes a massive housing dataset containing 80+ variables regarding property zoning, material quality, basement specifications, and geospatial coordinates. 
 
-* 🎯 **Target Variable:** `price` (Continuous)
-* 📖 **Full Feature Definitions:** Please refer to the [DATA_DICTIONARY.md](./DATA_DICTIONARY.md) file for a complete breakdown of all categorical and numerical features used in this pipeline.
+* **Target Variable:** `price` (Continuous)
+* **Full Feature Definitions:** Please refer to the [DATA_DICTIONARY.md](./DATA_DICTIONARY.md) file for a complete breakdown of all categorical and numerical features used in this pipeline.
 
 ---
 
-## 🎯 Objectives
+## Objectives
 - Predict house prices using supervised regression models.
 - Explore price categorization through classification to aid business decision-making.
 - Identify latent patterns in the housing market using advanced unsupervised learning.
@@ -34,7 +34,7 @@ This pipeline processes a massive housing dataset containing 80+ variables regar
 
 ---
 
-## 🧱 Project Architecture
+## Project Architecture
 
 ```text
 Raw Dataset
@@ -57,7 +57,7 @@ This modular structure allows each stage of the pipeline to be analyzed, improve
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 ├── 01_PREPROCESSING.ipynb
@@ -65,6 +65,7 @@ This modular structure allows each stage of the pipeline to be analyzed, improve
 ├── 03_CLASSIFICATION.ipynb
 ├── 04_UNSUPERVISED.ipynb
 ├── README.md
+├── DATA_DICTIONARY.md
 ├── requirements.txt
 
 ```
@@ -89,7 +90,7 @@ Clustering techniques to identify natural groupings. Explores K-Means (with the 
 
 ---
 
-## 🧪 Data Preprocessing
+## Data Preprocessing
 
 Real-estate data typically contains heterogeneous features, missing values, and categorical attributes. This project applies systematic preprocessing:
 
@@ -100,13 +101,13 @@ Real-estate data typically contains heterogeneous features, missing values, and 
 
 ---
 
-## 📈 Regression Modeling
+## Regression Modeling
 
 Regression is the primary modeling approach, focusing on precisely estimating the continuous `SalePrice`.
 
 * **Metrics:** RMSLE (primary), RMSE, and R².
 * **Best Models:** After exhaustive GridSearchCV hyperparameter tuning, **CatBoost** and **XGBoost** emerged as the top performers.
-* *CatBoost (Tuned):* Test RMSLE: **0.1271**, Test R²: **0.9252**
+* *CatBoost (Tuned):* Test RMSLE: **0.1276**, Test R²: **0.9230**
 * *XGBoost (Tuned):* Test RMSLE: **0.1276**, Test R²: **0.9194**
 
 
@@ -114,7 +115,7 @@ Regression is the primary modeling approach, focusing on precisely estimating th
 
 ---
 
-## 🧮 Classification Modeling
+## Classification Modeling
 
 House prices were discretized into Low, Medium, and High categories to explore a business-driven classification perspective.
 
@@ -124,7 +125,7 @@ House prices were discretized into Low, Medium, and High categories to explore a
 
 ---
 
-## 🔍 Unsupervised Learning
+## Unsupervised Learning
 
 Unsupervised techniques were used to identify hidden structures in the data without relying on price labels.
 
@@ -133,7 +134,7 @@ Unsupervised techniques were used to identify hidden structures in the data with
 
 ---
 
-## 📊 Key Results & Insights
+## Key Results & Insights
 
 * **Predictive Power:** Tuned ensemble models (XGBoost/CatBoost) yield highly accurate and consistent numerical price estimates ($R^2 > 0.91$).
 * **Market Positioning:** Classification models effectively map properties to budget tiers, complementing precise valuations.
@@ -141,28 +142,28 @@ Unsupervised techniques were used to identify hidden structures in the data with
 
 ---
 
-## ⚠️ Limitations
+## Limitations
 
 * Dataset size and quality may limit generalization to other geographic markets.
 * Feature availability restricts external factors (e.g., macroeconomic indicators, mortgage rates).
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
 * Feature importance and explainability (e.g., SHAP values).
 * Model deployment (API) with monitoring/retraining strategies.
 
 ---
 
-## 🧠 Skills & Tools
+## Skills & Tools
 
 * **Techniques:** Preprocessing, Feature Engineering, Supervised Learning (Regression/Classification), Unsupervised Learning (Clustering, Dimensionality Reduction).
 * **Stack:** Python, pandas, NumPy, scikit-learn, XGBoost, LightGBM, CatBoost, UMAP, HDBSCAN, Matplotlib, Plotly, Seaborn.
 
 ---
 
-## ⚡ Quickstart
+## Quickstart
 
 1. Clone repo
 2. Install dependencies: `pip install -r requirements.txt`

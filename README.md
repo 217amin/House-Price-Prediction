@@ -107,7 +107,7 @@ Regression is the primary modeling approach, focusing on precisely estimating th
 
 * **Metrics:** RMSLE (primary), RMSE, and R².
 * **Best Models:** After exhaustive GridSearchCV hyperparameter tuning, **CatBoost** and **XGBoost** emerged as the top performers.
-* *CatBoost (Tuned):* Test RMSLE: **0.1271**, Test R²: **0.9252**
+* *CatBoost (Tuned):* Test RMSLE: **0.1276**, Test R²: **0.9230**
 * *XGBoost (Tuned):* Test RMSLE: **0.1276**, Test R²: **0.9194**
 
 
